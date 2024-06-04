@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <header class="header">
+        <img src="/images/banner.png" class="banner" alt="Paradigm Pet Professionals banner">
+        <nav class="navbar">
+            <ul class="page-list">
+                <li class="page" id="home-page">Home</li>
+                <li class="page" id="cat-page">Cats</li>
+                <li class="page" id="dog-page">Dogs</li>
+                <li class="page" id="fish-page">Fish</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="lower-header">
+        <span class="breadcrumb">Home ></span>
+        <input type="text" placeholder="Search" class="search" name="search">
+        <button type="button" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <main>
+        <img src="/images/large-dog.jpeg" class="main-img" alt="large picture of golden retriever">
+        <div class="intro">
+            <h1 class="title">Paradigm Pet Professionals</h1>
+            <h2 class="slogan">Evidence-based pet care advice for every pet lover</h2>
+            <p>
+                Pets are nature's gift to humanity. It has been scientifically proven that opening our homes 
+                and hearts to a pet increases our longevity and improves our overall quality of life as well 
+                as the lives of our pets. At Pet Paradigm Professionals, our mission is to offer resources to 
+                help you care for your furry, scaly, feathery, and slimy loved ones. Our pet experts—or 
+                “Pexperts”—have been working with pet owners and professionals alike for the past twelve years. 
+                They offer one-on-one consultations with current and prospective pet owners as well as group 
+                presentations designed for veterinary, pet shelter, and pet breeding professionals.
+                <br><br>
+                Looking for basic pet care advice for the most common type of pets? Need additional help 
+                determining which type of pet is right for you and your family? We will work with you and 
+                provide tailored evidence-based pet care to ensure lifelong health and wellness of your new 
+                companion.
+            </p>
+        </div>
+    </main>
+    <section class="adopt-info">
+        <div class="information-intro">
+            <h3>Looking for your new best friend?</h3>
+            <p>The following organizations can help you find and adopt the perfect companion:</p>
+        </div>
+        <div class="organization-intro">
+            <ul>
+                <li><a href="https://home-home.org/" class="organization-link">General</a></li>
+                <li class="aspca-link"><a href="https://www.aspca.org/" class="organization-link">ASPCA</a></li>
+                <li class="fish-link"><a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/" class="organization-link">Fish Rescue</a></li>
+                <li class="snake-link"><a href="https://savethesnakes.org/snakerescuecall/" class="organization-link">Snake Rescue</a></li>
+                <li class="bird-link"><a href="https://ftlob.rescuegroups.org/" class="organization-link">Bird Rescue</a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="pet-link-container">
+        <div class="pet">
+            <img src="/images/cat1.jpg">
+            <div class="content">
+                <h4>Cats</h4>
+                <p>Click here to learn more!</p>
+            </div>
+        </div>
+        <div class="pet">
+            <img src="/images/dog1.jpg" class="dog">
+            <div class="content">
+                <h4>Dogs</h4>
+                <p>Click here to learn more!</p>
+            </div>
+        </div>
+        <div class="pet">
+            <img src="/images/fish1.jpg" class="fish">
+            <div class="content">
+                <h4>Fish</h4>
+                <p>Click here to learn more!</p>
+            </div>
+        </div>
+    </div>
+    <section class="contact">
+        <div class="contact-container">
+            <h2 class="contact-us">Contact Us</h2>
+            <p class="contact-intro">
+                We are also happy to help you navigate the adoption process! We will guide you through each step in the process 
+                from determining which type of pet is best suited for your family and home environment, to completing the necessary paperwork, 
+                to bringing your new loved one home.<br><br>
+                Please fill out our contact form to request a consultation. We will contact you within 48 hours to schedule a consultation. 
+                All fields are required.
+            </p>
+            <form action="" class="contact-form">
+                <div class="owner-container">
+                    <div class="owner-entry">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" placeholder="Jonathan" autocomplete="first-name">
+                    </div>
+                    <div class="owner-entry">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Arbuckle" autocomplete="last-name">
+                    </div>
+                    <div class="owner-entry">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" name="phone" placeholder="555-555-5555" autocomplete="phone-number">
+                    </div>
+                    <div class="owner-entry">
+                        <label for="timezone">Time Zone</label>
+                        <select id="timezone" name="timezone">
+                            <option value="eastern standard time">Eastern Standard Time (UTC-05:00)</option>
+                            <option value="central standard time">Central Standard Time (UTC-06:00)</option>
+                            <option value="mountain standard time">Mountain Standard Time (UTC-07:00)</option>
+                            <option value="pacific standard time">Pacific Standard Time (UTC-08:00)</option>
+                        </select>
+                    </div>
+                    <div class="owner-entry">
+                        <label for="email">Email Address</label>
+                        <input type="text" id="email" name="email" placeholder="j.buckle@monday.com">
+                    </div>
+                </div>
+                <div class="pet-container">
+                    <div class="pet-entry">
+                        <label for="pname">Pet Name</label>
+                        <input type="text" id="pname" name="pname" placeholder="Garfield">
+                    </div>
+                    <div class="pet-entry">
+                        <label for="petType">Pet Type</label>
+                        <select id="petType" name="petType">
+                            <option value="cat">Cat</option>
+                            <option value="dog">Dog</option>
+                            <option value="bird">Bird</option>
+                            <option value="rodent">Rodent</option>
+                            <option value="snake">Snake</option>
+                            <option value="fish">Fish</option>
+                        </select>
+                    </div>
+                    <div class="pet-entry">
+                        <label for="petAge">Pet Age</label>
+                        <select id="petAge" name="petAge">
+                            <option value="below one">&gt; 1 year</option>
+                            <option value="one">1 year</option>
+                            <option value="two">2 years</option>
+                            <option value="three">3 years</option>
+                            <option value="four">4 years</option>
+                            <option value="five">5 years</option>
+                            <option value="six">6 years</option>
+                            <option value="seven">7 years</option>
+                            <option value="eight">8 years</option>
+                            <option value="nine">9 years</option>
+                            <option value="nine">10 years</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="comment-container">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Write your message here..."></textarea>
+                </div>
+                <div class="send-btn">
+                    <input type="submit" class="send" value="Send">
+                </div>
+            </form>
+        </div>
+        <div class="dog-container">
+            <img src="/images/dog3.jpg">
+        </div>
+    </section>
+    <footer>
+        <h5>Paradigm Pet Professionals</h5>
+        <ul>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-linkedin"></i></li>
+            <li><i class="fa-brands fa-youtube"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+        </ul>
+    </footer>
+</body>
+</html>

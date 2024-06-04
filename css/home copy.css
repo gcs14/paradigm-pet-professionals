@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    --primary-color1: #003B6D;
+    --primary-color2: #6699CC;
+    --secondary-color1: #676767;
+    --secondary-color2: #BDBDBD;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    overflow-wrap: break-word;
+}
+
+header{
+    background-color: var(--primary-color1);
+    padding: 0.5%;
+}
+
+.navbar{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 0.75fr 3.5fr 1fr;
+    height: auto;
+}
+
+.banner{
+    width: 100%;
+    min-width: 77px;
+    padding: 3%;
+    margin: auto;
+}
+
+.page-list{
+    display: flex;
+    list-style: none;
+    margin:auto;
+    gap: 40px;
+    font-size: calc(3px + 1.6vw);
+    color: var(--secondary-color2);
+}
+
+.page:hover{
+    color: white;
+    background-color: var(--primary-color2);
+    size: 300px;
+    border-radius: 100%;
+    transform: scale(1.1);
+    transition: all 1s ease-in-out;
+
+}
+
+.lower-header{
+    display: flex;
+    background-color: var(--primary-color2);
+}
+
+.search-group{
+    display: flex;
+    color: var(--secondary-color1);
+    margin-left: auto;
+    padding-right: 3vw;
+}
+
+.search{
+    width: 8vw;
+    font-size: calc(3px + .8vw);
+}
+
+.logo{
+    margin: auto;
+    width: 5vw;
+}
+
+.home-breadcrumb{
+    color: var(--primary-color1);
+    font-size: calc(3px + 1vw);
+    font-weight: 600;
+    padding: 0.25vw 1vw;
+    margin: auto 0px;
+}
+
+.title, .slogan{
+    text-align: center;
+    margin: auto;
+}
+
+.title{
+    font-size: 7vw;
+    color: var(--primary-color1);
+    padding: 5px;
+}
+
+.slogan{
+    font-size: 3vw;
+    font-style: italic;
+}
+
+.main-container{
+    flex-shrink: 1;
+    gap: 2em;
+}
+
+.main-text{
+    width: 90%;
+    margin: auto;
+    background-color: #676767;
+}
+
+.pet-pics{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+
+.cat1, .dog1, .fish1{
+    width: 30vw;
+    height: 98.8%;
+}
+
+/* .cat1{
+    float: right;
+    width: 45%;
+    margin-right: 60px;
+    padding-bottom: 5px;
+} */
+
+/* .dog1{
+    float: left;
+    object-fit: contain;
+    width: 45%;
+    position: relative;
+    top: 0px;
+    padding-bottom: 5px;
+} */
+
+/* .fish1{
+    float: right;
+    width: 45%;
+    position: relative;
+    margin-right: 60px;
+} */
+
+/* @media only screen and (width < 1190px){
+    .main-container{
+        flex-direction: column-reverse;
+    }
+
+    .main-text{
+        margin: auto;
+        padding: 20px 20px 0 20px;
+    }
+} */
