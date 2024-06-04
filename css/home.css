@@ -41,12 +41,13 @@ header {
 }
 
 .page-list {
+    text-decoration: none;
     display: flex;
     justify-content: center;
     gap: 5vw;
     padding: 0;
     list-style: none;
-    font-size: clamp(16px, 1.7vw, 2rem);
+    font-size: clamp(16px, 1.7vw, 6rem);
     color: var(--secondary-color2);
     transition: 0.6s;
 }
@@ -65,23 +66,29 @@ header {
 
 .search {
     width: 10vw;
-    font-size: clamp(7px, 0.8vw, 3vw);
+    font-size: clamp(7px, 1vw, 3vw);
     color: var(--secondary-color1);
     margin: auto 0.5vw auto auto;
     transition: all .04s ease;
 }
 
 .search-btn {
+    display: flex;
+    justify-content: center;
     font-size: xx-small;
-    height: 3.5vh;
-    width: 1.5rem;
     align-items: center;
     position: relative;
     left: -5px;
 }
 
+.fa-magnifying-glass{
+    font-size: 1.1vw;
+    margin: auto;
+}
+
 .lower-header {
     display: flex;
+    gap: 5px;
     background-color: var(--secondary-color2);
     transition: all .4s ease;
     align-items: center;
@@ -89,7 +96,7 @@ header {
 
 .breadcrumb {
     color: var(--primary-color1);
-    font-size: clamp(10px, 1.1vw, 3vw);
+    font-size: clamp(10px, 1.1vw, 3rem);
     font-weight: 600;
     padding: 0.3% 1%;
 }
@@ -224,7 +231,7 @@ a:hover {
     width: 100%;
     height: 100%;
     max-height: 200px;
-    min-height: 150px;
+    /* min-height: 150px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,7 +249,7 @@ a:hover {
     width: 100%;
     height: 100%;
     max-height: 200px;
-    min-height: 150px;
+    /* min-height: 150px; */
     display: block;
     margin: auto;
     object-fit: cover;
@@ -265,7 +272,7 @@ a:hover {
     width: 100%;
     height: 100%;
     max-height: 200px;
-    min-height: 150px;
+    /* min-height: 150px; */
     position: absolute;
     top: 0;
     left: 0;
@@ -303,14 +310,24 @@ a:hover {
     transform: translateY(0);
 }
 
+@media (min-width: 1441px){
+    .pet-link-container, .pet img, .content{
+        max-height: 20vh;
+    }
+
+    .pet:hover {
+        transform: scale(1.05);
+    }
+}
+
 section.contact {
     width: 80%;
     margin: auto;
     display: flex;
     align-items: flex-start;
-    align-content: flex-start;
-    padding: 0px;
+    padding: 3vh;
     color: var(--primary-color1);
+    background-color: var(--secondary-color2);
 }
 
 .contact-us {
@@ -322,7 +339,7 @@ section.contact {
 }
 
 .contact-intro {
-    font-size: clamp(12px, 1.3vw, 3vw);
+    font-size: clamp(12px, 1.3vw, 5rem);
     text-align: center;
     width: 90%;
     margin: auto;
@@ -336,7 +353,6 @@ section.contact {
 }
 
 .dog-container {
-    align-self: center;
     margin: auto;
 }
 
@@ -399,6 +415,10 @@ section.contact {
 }
 
 @media (max-width: 785px) {
+    .fa-magnifying-glass{
+        font-size: 1.5vw;
+    }
+
     .adopt-info {
         display: block;
         border-radius: 0;
@@ -460,6 +480,7 @@ section.contact {
 footer {
     display: flex;
     flex-direction: column;
+    border-top: 1vh solid white;
     color: white;
     background-color: var(--primary-color1);
 }
@@ -467,13 +488,20 @@ footer {
 footer ul {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 5vh;
     list-style: none;
-    padding: 0;
+    padding: 10px;
     align-self: center;
+    margin: 0;
+}
+
+footer li{
+    font-size: 1.7vh;
 }
 
 footer h5{
+    font-size: 2vh;
     text-align: center;
-    margin-bottom: 0;
+    margin: 10px 0;
+    
 }
