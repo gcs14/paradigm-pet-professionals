@@ -269,7 +269,7 @@ a:hover {
 }
 
 .fish {
-    object-position: 25% 20%;
+    object-position: right bottom;
 }
 
 .pet:hover {
