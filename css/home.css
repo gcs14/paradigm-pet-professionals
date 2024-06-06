@@ -350,6 +350,14 @@ section.contact {
     padding: 0.8rem 0 1.2rem 0;
 }
 
+.contact-form label{
+    font-size: clamp(12px, 1.3vw, 5rem);
+}
+
+.contact-form input, select, textarea{
+    font-size: clamp(10px, 1.3vw, 5rem);
+}
+
 .contact-container {
     width: 60%;
     background-color: var(--secondary-color2);
