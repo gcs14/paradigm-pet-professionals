@@ -77,7 +77,7 @@ a:hover {
 .search {
     width: 10%;
     height: clamp(1.2rem, 2vw, 1.8rem);
-    font-size: clamp(8px, 1vw, 4rem);
+    font-size: clamp(10px, 1vw, 4rem);
     color: var(--secondary-color1);
     margin: auto 0.5vw auto auto;
     transition: all .04s ease;
@@ -112,7 +112,7 @@ a:hover {
 }
 
 main {
-    width: 100vw;
+    width: 100%;
     display: flex;
 }
 
@@ -127,12 +127,6 @@ main {
     width: 50%;
 }
 
-.intro p {
-    font-size: clamp(12px, 1.3vw, 3vw);
-    padding: 1.3vw;
-    margin: auto;
-}
-
 .title,
 .slogan {
     text-align: center;
@@ -140,14 +134,22 @@ main {
 }
 
 .title {
-    font-size: 4.2vw;
+    font-size: clamp(1.3rem, 3vw, 5vw);
     color: var(--primary-color1);
-    padding: 5px;
+    word-wrap: break-word;
+    padding: 0.2em;
 }
 
 .slogan {
-    font-size: 2.3vw;
+    font-size: clamp(0.8rem, 1.6vw, 3vw);
     font-style: italic;
+    font-weight: 100;
+}
+
+.intro p {
+    font-size: clamp(0.8rem, 1.3vw, 3vw);
+    padding: 1em;
+    margin: auto;
 }
 
 .adopt-info {
@@ -160,12 +162,12 @@ main {
     width: 50%;
 }
 
-.information-intro>h3 {
-    font-size: clamp(16px, 2.7vw, 3vw);
+.information-intro > h3 {
+    font-size: clamp(1rem, 2.7vw, 3vw);
     text-align: center;
     margin: auto;
     position: relative;
-    top: 10px;
+    top: 0.3em;
 }
 
 .information-intro p {
@@ -185,9 +187,9 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 30px;
+    gap: 1.5em;
     flex-wrap: wrap;
-    font-size: clamp(13px, 1.5vw, 3vw);
+    font-size: clamp(0.8rem, 1.4vw, 3rem);
     font-weight: bold;
     list-style: none;
     padding: 1vw;
@@ -201,7 +203,7 @@ main {
         column-gap: 0;
         row-gap: 0;
         margin: auto;
-        padding-left: 3vw;
+        padding-left: 0;
     }
 
     .fish-link {
@@ -242,8 +244,8 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    gap: 30px;
+    padding: 1em;
+    gap: 1em;
 }
 
 .pet {
@@ -271,7 +273,7 @@ a:hover {
 }
 
 .pet:hover {
-    transform: scale(1.1);
+    transform: scale(1.06);
     transition: 0.6s
 }
 
@@ -279,7 +281,6 @@ a:hover {
     width: 100%;
     height: 100%;
     max-height: 200px;
-    /* min-height: 150px; */
     position: absolute;
     top: 0;
     left: 0;
@@ -328,7 +329,7 @@ section.contact {
     margin: auto;
     display: flex;
     align-items: flex-start;
-    border-radius: 20px;
+    border-radius: 1.2em;
     color: var(--primary-color1);
     background-color: var(--secondary-color2);
 }
@@ -337,7 +338,7 @@ section.contact {
     font-size: clamp(22px, 3vw, 5vw);
     text-align: center;
     margin: auto;
-    padding-left: 10px;
+    padding-left: 1rem;
     color: var(--primary-color1);
 }
 
@@ -346,13 +347,13 @@ section.contact {
     text-align: center;
     width: 90%;
     margin: auto;
-    padding: 10px 0 20px 0;
+    padding: 0.8rem 0 1.2rem 0;
 }
 
 .contact-container {
     width: 60%;
     background-color: var(--secondary-color2);
-    border-radius: 10px;
+    border-radius: 0.8em;
 }
 
 .dog-container {
@@ -418,10 +419,6 @@ section.contact {
 }
 
 @media (max-width: 785px) {
-    .fa-magnifying-glass{
-        font-size: 1.5vw;
-    }
-
     .adopt-info {
         display: block;
         border-radius: 0;
@@ -434,7 +431,7 @@ section.contact {
     .information-intro p {
         margin-bottom: auto;
         position: relative;
-        top: -4px;
+        top: -3px;
     }
 
     .organization-intro {
@@ -445,8 +442,9 @@ section.contact {
 
     .organization-intro ul {
         display: flex;
-        gap: 30px;
-        font-size: clamp(10px, 1.5vw, 3vw);
+        font-size: clamp(12px, 1.7vw, 1rem);
+        gap: 3%;
+        padding: 0.5em;
     }
 
     .contact-container {
@@ -456,6 +454,7 @@ section.contact {
 
     .contact-form label{
         font-size: 12px;
+        word-wrap: break-word;
         width: 100px;
     }
 
@@ -483,7 +482,7 @@ section.contact {
 footer {
     display: flex;
     flex-direction: column;
-    border-top: 1vh solid white;
+    margin-top: auto;
     color: white;
     background-color: var(--primary-color1);
 }
@@ -491,20 +490,20 @@ footer {
 footer ul {
     display: flex;
     flex-direction: row;
-    gap: 5vh;
+    gap: 8%;
     list-style: none;
-    padding: 10px;
-    align-self: center;
+    padding: 0.2em;
+    place-content: center;
     margin: 0;
 }
 
 footer li{
-    font-size: 1.7vh;
+    font-size: calc(0.8vw + 0.5rem);
 }
 
 footer h5{
-    font-size: 2vh;
+    font-size: calc(1vw + 0.5rem);
+    font-weight: 100;
     text-align: center;
-    margin: 10px 0;
-    
+    margin: 0.25em 0;   
 }
