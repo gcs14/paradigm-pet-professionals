@@ -134,7 +134,7 @@ a:hover {
 }
 
 .intro-text p{
-    font-size: clamp(11px, 1.7vw, 6rem);
+    font-size: clamp(0.9rem, 1.7vw, 6rem);
     width: 90%;
     margin: auto;
 }   
