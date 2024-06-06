@@ -111,6 +111,14 @@ a:hover {
     padding: 0.3% 1%;
 }
 
+.breadcrumb a{
+    color: var(--primary-color1);
+}
+
+.breadcrumb a:hover{
+    color: white;
+}
+
 .intro{
     display: flex;
     justify-content: center;
