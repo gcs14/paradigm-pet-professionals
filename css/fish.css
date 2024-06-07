@@ -209,7 +209,8 @@ a:hover {
 }
 
 .stage-text p {
-    width: 65ch;
+    width: 90%;
+    margin: auto;
 }
 
 .stage-text a {
